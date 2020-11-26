@@ -15,7 +15,7 @@ namespace CC01.BO
         public string Prenom { get; set; }
         public DateTime Né_le { get; set; }
         public string Matricule { get; set; }
-        public string Contact { get; set; }
+        public int Contact { get; set; }
         public string Email { get; set; }
 
 
@@ -25,7 +25,7 @@ namespace CC01.BO
         }
 
         public Etudiant(byte[] photo, string nom, string prenom, DateTime né_le, 
-            string matricule, string contact, string email)
+            string matricule, int contact, string email)
         {
             Photo = photo;
             Nom = nom;
